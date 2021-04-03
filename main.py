@@ -1,11 +1,11 @@
-from barcode import Code39
+from barcode import Code128
 from barcode.writer import ImageWriter
 from PIL import Image
 import os
 
-number = '123456789026'
+number = 'HSDWJDWBDJWBJD'
 
-code = Code39(number, writer=ImageWriter())
+code = Code128(number, writer=ImageWriter())
 
 code.save('new')
 
